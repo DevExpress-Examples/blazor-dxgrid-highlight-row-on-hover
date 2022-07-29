@@ -1,0 +1,35 @@
+﻿@page "/"
+
+@using HighlightHoveredRow.Data
+@inject WeatherForecastService ForecastService
+
+<style>
+    .highlighted-item:hover {
+        background-color: yellow;
+    }
+</style>
+
+@if (forecasts == null) {
+    <p><em>Loading...</em></p>
+}
+else {
+    <DxGrid Data="@forecasts" CssClass="mw-1100" CustomizeElement="OnCustomizeElement">
+        <Columns>
+            <DxGridDataColumn Caption="Date" FieldName="Date" />
+            <DxGridDataColumn Caption="Temperature" FieldName="TemperatureF" />
+        </Columns>
+    </DxGrid>
+}
+
+@code {
+    private WeatherForecast[]? forecasts;
+
+    protected override async Task OnInitializedAsync() {
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+    }
+
+    void OnCustomizeElement(GridCustomizeElementEventArgs e) {
+        if(e.ElementType == GridElementType.DataRow)
+            e.CssClass = "highlighted-item";
+    }
+}
