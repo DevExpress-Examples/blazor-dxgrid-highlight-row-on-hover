@@ -1,25 +1,20 @@
-# Product/Platform - Task
+# Grid for Blazor - How to highlight a row on hover
 
-This is the repository template for creating new examples. Describe the solved task here.
+This example demonstrates how to highlight a [DxGrid](https://docs.devexpress.com/Blazor/403143/grid) row when a user hovers over the row.
 
-Put a screenshot that illustrates the result here.
+!Blazor DxGrid highlight a row on hower](highlight-row.png)
 
-Then, add implementation details (steps, code snippets, and other technical information in a free form), or add a link to an existing document with implementation details. 
+The [CustomizeElement](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.CustomizeElement) event allows you to customize the [DxGrid](https://docs.devexpress.com/Blazor/403143/grid)'s rows and cells. This event's [ElementType](https://docs.devexpress.com/Blazor/DevExpress.Blazor.GridCustomizeElementEventArgs.ElementType) argument property gets the type of the processed element. Use event's [CssClass](https://docs.devexpress.com/Blazor/DevExpress.Blazor.GridCustomizeElementEventArgs.CssClass) argument property to apply a CSS class to the processed element.
 
 ## Files to Look At
 
-- link.cs (VB: link.vb)
-- link.js
-- ...
+- [Index.razor](./CS/HighlightHoweredRow/Pages/Index.razor)
 
 ## Documentation
 
-- link
-- link
-- ...
+- [Grid: Edit Data](xref:https://docs.devexpress.com/Blazor/403454/grid/edit-data-and-validate-input)
+- [Grid: Selection](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.SelectionMode)
 
 ## More Examples
 
-- link
-- link
-- ...
+- [Grid for Blazor - How to edit a row on a separate page](https://github.com/DevExpress-Examples/blazor-DxGrid-Separate-Edit-Form)
