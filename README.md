@@ -13,7 +13,7 @@ The [CustomizeElement](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGr
 
 ## Files to Look At
 
-- [Index.razor](./CS/HighlightHoweredRow/Pages/Index.razor)
+- [Index.razor](./CS/HighlightHoveredRow/Pages/Index.razor)
 
 ## Documentation
 
