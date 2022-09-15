@@ -5,13 +5,13 @@
 <!-- default badges end -->
 # Grid for Blazor - How to highlight a row on hover
 
-This example demonstrates how to highlight a [DxGrid](https://docs.devexpress.com/Blazor/403143/grid) row when a user hovers over the row.
+This example highlights a Blazor Grid ([DxGrid](https://docs.devexpress.com/Blazor/403143/grid)) row when a user hovers over the row.
 
 ![Blazor DxGrid highlight a row on hower](images/highlight-row.png)
 
-The [CustomizeElement](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.CustomizeElement) event allows you to customize the [DxGrid](https://docs.devexpress.com/Blazor/403143/grid)'s rows and cells. This event's [ElementType](https://docs.devexpress.com/Blazor/DevExpress.Blazor.GridCustomizeElementEventArgs.ElementType) argument property gets the type of the processed element. Use the event's [CssClass](https://docs.devexpress.com/Blazor/DevExpress.Blazor.GridCustomizeElementEventArgs.CssClass) argument property to apply a CSS class to the processed element.
+Our Blazor Grid's [CustomizeElement](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.CustomizeElement) event allows you to customize the [DxGrid](https://docs.devexpress.com/Blazor/403143/grid) rows and cells. This event's [ElementType](https://docs.devexpress.com/Blazor/DevExpress.Blazor.GridCustomizeElementEventArgs.ElementType) argument property gets the type associated with the processed element. Use the event's [CssClass](https://docs.devexpress.com/Blazor/DevExpress.Blazor.GridCustomizeElementEventArgs.CssClass) argument property to apply a CSS class to the processed element.
 
-## Files to Look At
+## Files to Review
 
 - [Index.razor](./CS/HighlightHoveredRow/Pages/Index.razor)
 
