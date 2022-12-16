@@ -21,5 +21,5 @@ Our Blazor Grid's [CustomizeElement](https://docs.devexpress.com/Blazor/DevExpre
 - [Grid: Selection](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.SelectionMode)
 
 ## More Examples
-
+ 
 - [Grid for Blazor - How to edit a row on a separate page](https://github.com/DevExpress-Examples/blazor-DxGrid-Separate-Edit-Form)
